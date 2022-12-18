@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <div class="section">
+            <div class="topSearchbar" style="">
+                <h5>MaWeather</h5>
+                <div class="search">
+                    <input type="text" class="text" placeholder="Search your city ">
+                    <button value="submit" class="submit">search</button>
+                </div>
+                <!-- <p class="date">20 May 2022</p> -->
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <h1 class="cityName" id="city"><span id="cityName"></span>, <span id="country"></span></h1>
+            </div>
+            <p id="description"></p>
+            <h1 class="temperature" id="temperature"></h1>
+            <div><img id="weatherIcon" src="icons/cloud/12.png" alt="weather-Icon"></div>
+
+
+            <br>
+            <div style="display: flex; justify-content: space-around;">
+                <div class="humidity">
+                    <div class="humiditylogo">
+                        <img src="icons/cloud/7.png" alt="">
+                    </div>
+                    <p>Humidity</p>
+                    <p><span id="humidity"></span>%</p>
+                </div>
+                <div class="wind">
+                    <div class="windlogo">
+                        <img src="icons/sun/6.png" alt="">
+                    </div>
+                    <p>Wind</p>
+                    <p> <span id="wind_speed"></span> m/s <span>E</span></p>
+                </div>
+                <div class="pressure">
+                    <div class="pressurelogo">
+                        <img src="icons/sun/6.png" alt="">
+                    </div>
+                    <p>Pressure</p>
+                    <p> <span id="pressure"></span> hPa</p>
+                </div>
+            </div>
+        </div>
+        <div class="forecast-Section">
+
+        </div>
+    </center>
+    <script src="app.js"></script>
+</body>
+
+</html>
